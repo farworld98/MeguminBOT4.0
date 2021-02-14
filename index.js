@@ -4,12 +4,12 @@ let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
 const CFonts  = require('cfonts')
-CFonts.say('Welcome In\nTermux Bot Wa', {
+CFonts.say('Welcome In\nMeguminBOT4.0', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say(`${package.name} By FarhanXCo`, {
+CFonts.say(`${package.name} Ig: mhmhfjralfarizi_`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
