@@ -481,6 +481,102 @@ async function starts() {
 		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
 		}, 0)
 		}
+       if (messagesLink.includes("jnck")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		reply('Byee Anak Jnck👋🏻')
+		}, 1100)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
+		}, 0)
+		}
+      if (messagesLink.includes("qontol")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		reply('Byee Anak Qontol👋🏻')
+		}, 1100)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
+		}, 0)
+		}
+       if (messagesLink.includes("babi")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		reply('Byee Anak Babi👋🏻')
+		}, 1100)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
+		}, 0)
+		}
+      if (messagesLink.includes("tolol")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		reply('Byee Anak Tolol👋🏻')
+		}, 1100)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
+		}, 0)
+		}
+      if (messagesLink.includes("bego")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		reply('Byee Anak Bego👋🏻')
+		}, 1100)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
+		}, 0)
+		}
+      if (messagesLink.includes("ngentot")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		reply('Byee Anak Ngentot👋🏻')
+		}, 1100)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
+		}, 0)
+		}
        if (messagesLink.includes("৭৭৭৭৭৭৭৭")){
 		if (!isGroup) return
 		if (!isAntiLink) return
