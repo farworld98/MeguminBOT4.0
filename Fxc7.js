@@ -854,11 +854,18 @@ async function starts() {
 					await limitAdd(sender) 
 					break 
 				case 'gifstiker':
+				case 'sgif':
+				case 'gifsticker':
+				case 'stickergif':
+				case 'stikergif':
+				case 'gifstiker':
 				case 'stiker':
 				case 'sticker':
 				case 's':
+				case 'mls':
 						if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						if (!isPublic) return reply(mess.only.publikG)
+                                                const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await frhan.downloadAndSaveMediaMessage(encmedia)
 						if (isLimit(sender)) return reply(limitend(pushname2))
 						reply(mess.wait)
