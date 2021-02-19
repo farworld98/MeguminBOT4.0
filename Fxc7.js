@@ -305,6 +305,98 @@ async function starts() {
                 fs.writeFileSync('./database/json/limit.json', JSON.stringify(_limit))
             }
         }
+        case 'sound1':
+satu = fs.readFileSync('./assets/sound1.mp3');
+baby.sendMessage(from, satu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'sound2':
+dua = fs.readFileSync('./assets/sound2.mp3');
+baby.sendMessage(from, dua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'sound3':
+tiga = fs.readFileSync('./assets/sound3.mp3');
+baby.sendMessage(from, tiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'sound4':
+empat = fs.readFileSync('./assets/sound4.mp3');
+baby.sendMessage(from, empat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'sound5':
+lima = fs.readFileSync('./assets/sound5.mp3');
+baby.sendMessage(from, lima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'sound6':
+enam = fs.readFileSync('./assets/sound6.mp3');
+baby.sendMessage(from, enam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'sound7':
+tujuh = fs.readFileSync('./assets/sound7.mp3');
+baby.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'iri':
+iri = fs.readFileSync('./assets/iri.mp3');
+baby.sendMessage(from, iri, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'pale':
+pale = fs.readFileSync('./assets/pale.mp3');
+baby.sendMessage(from, pale, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'sad':
+sad = fs.readFileSync('./assets/sad.mp3');
+baby.sendMessage(from, sas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'pota':
+pota = fs.readFileSync('./assets/pota.mp3');
+baby.sendMessage(from, pota, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'because':
+because = fs.readFileSync('./assets/because.mp3');
+baby.sendMessage(from, because, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'menyukaiku':
+menyukaiku = fs.readFileSync('./assets/menyukaiku.mp3');
+baby.sendMessage(from, menyukaiku, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'help':
+help = fs.readFileSync('./assets/help.mp3');
+baby.sendMessage(from, help, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'terimakasih':
+help = fs.readFileSync('./assets/terimakasih.mp3');
+baby.sendMessage(from, help, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'pap':
+pap = fs.readFileSync('./assets/pap.mp3');
+baby.sendMessage(from, pap, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'cinta':
+cinta = fs.readFileSync('./assets/cinta.mp3');
+baby.sendMessage(from, cinta, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'krik':
+krik = fs.readFileSync('./assets/krik.mp3');
+baby.sendMessage(from, krik, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'anjim':
+anjim = fs.readFileSync('./assets/anjim.mp3');
+baby.sendMessage(from, anjim, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'jujur':
+jujur = fs.readFileSync('./assets/jujur.mp3');
+baby.sendMessage(from, jujur, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'ara':
+ara = fs.readFileSync('./assets/ara.mp3');
+baby.sendMessage(from, ara, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'pal':
+pal = fs.readFileSync('./assets/pal.mp3');
+baby.sendMessage(from, pal, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+        case 'bernyanyi':
+bernyanyi = fs.readFileSync('./assets/bernyanyi.mp3');
+baby.sendMessage(from, bernyanyi, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
        if (messagesLink.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
@@ -312,269 +404,13 @@ async function starts() {
 		frhan.updatePresence(from, Presence.composing)
 		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		setTimeout( () => {
-		reply('Bye Bye 👋')
+		reply('Jangan send link gc ajg bye bro 👋🏻')
 		}, 1100)
 		setTimeout( () => {
 		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 1000)
 		setTimeout( () => {
 		reply(`Link Group Terdeteksi maaf *${pushname2}* anda akan di kick`)
-		}, 0)
-		}
-       if (messagesLink.includes("ajg")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Jangan Toxic Ya Kaka👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("asu")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Jangan Toxic Ya Kaka👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("kontol")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Jangan Toxic Ya Kaka👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("memek")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Jangan Toxic Ya Kaka👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("kontlo")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Jangan Toxic Ya Kaka👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("jembut")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Jangan Toxic Ya Kaka👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("jembud")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Jangan Toxic Ya Kaka👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("jembod")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Jangan Toxic Ya Kaka👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("kntl")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Jangan Toxic Ya Kaka👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("kontl")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Jangan Toxic Ya Kaka👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("jnck")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Byee Anak Jnck👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-      if (messagesLink.includes("qontol")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Byee Anak Qontol👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-       if (messagesLink.includes("babi")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Byee Anak Babi👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-      if (messagesLink.includes("tolol")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Byee Anak Tolol👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-      if (messagesLink.includes("bego")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Byee Anak Bego👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
-		}, 0)
-		}
-      if (messagesLink.includes("ngentot")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
-		frhan.updatePresence(from, Presence.composing)
-		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
-		setTimeout( () => {
-		reply('Byee Anak Ngentot👋🏻')
-		}, 1100)
-		setTimeout( () => {
-		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
-					}, 1000)
-		setTimeout( () => {
-		reply(`*[ TOXIC DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
 		}, 0)
 		}
        if (messagesLink.includes("৭৭৭৭৭৭৭৭")){
@@ -2435,7 +2271,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]} wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 〙═══', members_id, true)
+					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 𝙼??𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 〙═══', members_id, true)
 					break
 			    case 'mentionall':
 			    if (isBanned) return reply(mess.only.benned)    
