@@ -4,6 +4,12 @@
 * Tambahin ya Cape Gan ngefix² Yg Ga work
 * Jan numpang nama doank
 
+// AntiToxic By Ig: @mhmdfjralfarizi_
+* WhatsApp: +62 813-3378-2061
+* Cape asu nambahinnya blom jg klo eror :')
+* Jangan diganti ya nama author & recodernya cape bro :'D
+* Baca tulisan yang dibawah ya anjg ^_^
+
 - What's New?
 * New Features
 */
