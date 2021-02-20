@@ -126,6 +126,7 @@ https://chat.whatsapp.com/GJoOmPGz8qC8PCNZ4IRn9M
 ╭───────「 *GROUP ONLY* 」
 ┴
 │➻ *${prefix}antilink On/Off*
+│➻ *${prefix}antitoxic On/Off*
 │➻ *${prefix}welcome On/Off*
 │➻ *${prefix}grup buka/tutup*
 │➻ *${prefix}ownergrup*
