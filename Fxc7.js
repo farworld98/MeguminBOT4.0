@@ -2778,25 +2778,6 @@ async function starts() {
 						reply('on untuk mengaktifkan, off untuk menonaktifkan')
 					}
 					break
-					case 'antitoxic':
-				if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('ketik !antitoxic on untuk mengaktifkan')
-					if ((args[0]) === 'on') {
-						if (isAntiToxic) return reply('anti toxic sudah on')
-						antitoxic.push(from)
-						fs.writeFileSync('./database/json/antitoxic.json', JSON.stringify(antitoxic))
-						reply(`\`\`\`✓Sukses mengaktifkan fitur anti toxic di group\`\`\` *${groupMetadata.subject}*`)
-					} else if ((args[0]) === 'off') {
-						if (!isAntiLink) return reply('anti toxic sudah off')
-						antitoxic.splice(from, 1)
-						fs.writeFileSync('./database/json/antitoxic.json', JSON.stringify(antilink))
-						reply(`\`\`\`✓Sukses menonaktifkan fitur anti toxic di group\`\`\` *${groupMetadata.subject}*`)
-					} else {
-						reply('on untuk mengaktifkan, off untuk menonaktifkan')
-					}
-					break
 				case 'caklontong':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
