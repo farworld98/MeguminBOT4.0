@@ -50,6 +50,7 @@ const adminNumber = JSON.parse(fs.readFileSync('./database/json/admin.json'))
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const blocked = JSON.parse(fs.readFileSync('./database/json/blocked.json'))
 const antilink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
+const antitoxic = JSON.parse(fs.readFileSync('./database/json/antitoxic.json'))
 let {
 instagram, yt, groupLink
 } = setting
@@ -219,6 +220,7 @@ async function starts() {
 			const isSimi = isGroup ? samih.includes(from) : false 
 			const isPublic = isGroup ? publik.includes(from) : false 
 			const isAntiLink = isGroup ? antilink.includes(from) : false
+			const isAntiToxic = isGroup ? antitoxic.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isUser = user.includes(sender)
 			const isBanned = ban.includes(sender)
@@ -305,98 +307,6 @@ async function starts() {
                 fs.writeFileSync('./database/json/limit.json', JSON.stringify(_limit))
             }
         }
-        case 'sound1':
-satu = fs.readFileSync('./assets/sound1.mp3');
-baby.sendMessage(from, satu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'sound2':
-dua = fs.readFileSync('./assets/sound2.mp3');
-baby.sendMessage(from, dua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'sound3':
-tiga = fs.readFileSync('./assets/sound3.mp3');
-baby.sendMessage(from, tiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'sound4':
-empat = fs.readFileSync('./assets/sound4.mp3');
-baby.sendMessage(from, empat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'sound5':
-lima = fs.readFileSync('./assets/sound5.mp3');
-baby.sendMessage(from, lima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'sound6':
-enam = fs.readFileSync('./assets/sound6.mp3');
-baby.sendMessage(from, enam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'sound7':
-tujuh = fs.readFileSync('./assets/sound7.mp3');
-baby.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'iri':
-iri = fs.readFileSync('./assets/iri.mp3');
-baby.sendMessage(from, iri, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'pale':
-pale = fs.readFileSync('./assets/pale.mp3');
-baby.sendMessage(from, pale, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'sad':
-sad = fs.readFileSync('./assets/sad.mp3');
-baby.sendMessage(from, sas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'pota':
-pota = fs.readFileSync('./assets/pota.mp3');
-baby.sendMessage(from, pota, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'because':
-because = fs.readFileSync('./assets/because.mp3');
-baby.sendMessage(from, because, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'menyukaiku':
-menyukaiku = fs.readFileSync('./assets/menyukaiku.mp3');
-baby.sendMessage(from, menyukaiku, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'help':
-help = fs.readFileSync('./assets/help.mp3');
-baby.sendMessage(from, help, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'terimakasih':
-help = fs.readFileSync('./assets/terimakasih.mp3');
-baby.sendMessage(from, help, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'pap':
-pap = fs.readFileSync('./assets/pap.mp3');
-baby.sendMessage(from, pap, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'cinta':
-cinta = fs.readFileSync('./assets/cinta.mp3');
-baby.sendMessage(from, cinta, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'krik':
-krik = fs.readFileSync('./assets/krik.mp3');
-baby.sendMessage(from, krik, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'anjim':
-anjim = fs.readFileSync('./assets/anjim.mp3');
-baby.sendMessage(from, anjim, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'jujur':
-jujur = fs.readFileSync('./assets/jujur.mp3');
-baby.sendMessage(from, jujur, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'ara':
-ara = fs.readFileSync('./assets/ara.mp3');
-baby.sendMessage(from, ara, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'pal':
-pal = fs.readFileSync('./assets/pal.mp3');
-baby.sendMessage(from, pal, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
-        case 'bernyanyi':
-bernyanyi = fs.readFileSync('./assets/bernyanyi.mp3');
-baby.sendMessage(from, bernyanyi, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
        if (messagesLink.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
@@ -426,7 +336,7 @@ break
 		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 1000)
 		setTimeout( () => {
-		reply(`*[ VIRTEX DETECTED ]*\nMaaf *${pushname2}* Anda Berbicara Kotor, Anda Segera Dikick!`)
+		reply(`*[ VIRTEX DETECTED ]*\nMaaf *${pushname2}* Anda Mengirim Virtex, Anda Segera Dikick!`)
 		}, 0)
 		}
 
@@ -2631,6 +2541,25 @@ break
 						antilink.splice(from, 1)
 						fs.writeFileSync('./database/json/antilink.json', JSON.stringify(antilink))
 						reply(`\`\`\`✓Sukses menonaktifkan fitur anti link di group\`\`\` *${groupMetadata.subject}*`)
+					} else {
+						reply('on untuk mengaktifkan, off untuk menonaktifkan')
+					}
+					break
+					case 'antitoxic':
+				if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (args.length < 1) return reply('ketik !antitoxic on untuk mengaktifkan')
+					if ((args[0]) === 'on') {
+						if (isAntiToxic) return reply('anti toxic sudah on')
+						antitoxic.push(from)
+						fs.writeFileSync('./database/json/antitoxic.json', JSON.stringify(antitoxic))
+						reply(`\`\`\`✓Sukses mengaktifkan fitur anti toxic di group\`\`\` *${groupMetadata.subject}*`)
+					} else if ((args[0]) === 'off') {
+						if (!isAntiLink) return reply('anti toxic sudah off')
+						antitoxic.splice(from, 1)
+						fs.writeFileSync('./database/json/antitoxic.json', JSON.stringify(antilink))
+						reply(`\`\`\`✓Sukses menonaktifkan fitur anti toxic di group\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('on untuk mengaktifkan, off untuk menonaktifkan')
 					}
