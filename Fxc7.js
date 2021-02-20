@@ -1892,7 +1892,7 @@ async function starts() {
 					await limitAdd(sender) 
 					break 
 			
-			/*case 'instaimg':
+			case 'instaimg':
 				if (isBanned) return reply(mess.only.benned)
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
