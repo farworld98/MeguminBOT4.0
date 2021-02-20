@@ -4,6 +4,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 	
 \`\`\`Follow My Instagram\`\`\`
 ${instagram}
+https://www.instagram.com/rivalfdla
 
 \`\`\`SUBSCRIBE😁\`\`\`
 ${yt}
@@ -332,6 +333,7 @@ https://chat.whatsapp.com/GJoOmPGz8qC8PCNZ4IRn9M
 │➲ *M. Fajar Alfarizi*
 │➲ *Debby*
 │➲ *ꜰxᴄ7ʙᴏᴛ (Bang Farhan)*
+│➲ *Rival Gantenk*
 │➲ *MY TEAM 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃*
 │➲ *CONTENT CREATOR BOT WHATSAPP*
 ┬
@@ -366,9 +368,9 @@ const donasi = (name) => {
 	return `       
 ╭─────「 *DONASI SEIKHLASNYA* 」
 ┴
-│√ *PULSA: 08311800241*
-│√ *OVO : 08311800241*
-│
+│√ *PULSA: 081333782061*
+│√ *OVO: 081333782061*
+│√ *DANA: 081333782061*
 │\`\`\`Pulsa\`\`\`
 │ *15k Invite Bot Ke Grup selama 1 bulan*
 │
