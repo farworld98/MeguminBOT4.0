@@ -1915,7 +1915,7 @@ async function starts() {
 				    reply(mess.wait)
 				    frhan.sendMessage(from, insta, video, {mimtype: 'video/mp4', filename: 'instagram'.mp3, quoted: mek})
 				    await limitAdd(sender) 
-				    break  */
+				    break
 				    
 				case 'instastory':
 				if (isBanned) return reply(mess.only.benned)
