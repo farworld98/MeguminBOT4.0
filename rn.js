@@ -50,7 +50,8 @@ const audionye = JSON.parse(fs.readFileSync('./src/audio.json'))
 const imagenye = JSON.parse(fs.readFileSync('./src/image.json'))
 const setiker = JSON.parse(fs.readFileSync('./src/stik.json'))
 const videonye = JSON.parse(fs.readFileSync('./src/video.json'))
-const bad = JSON.parse(fs.readFileSync('./database/json/bad.json'))
+const bad = JSON.parse(fs.readFileSync('./database/json/bad.json'))
+
 const badword = JSON.parse(fs.readFileSync('./database/json/badword.json'))
 const bucinrandom = JSON.parse(fs.readFileSync('./database/json/bucin.json'))
 const hekerbucin = JSON.parse(fs.readFileSync('./database/json/hekerbucin.json'))
@@ -62,12 +63,12 @@ const antilink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN: Resta Gans\n'
-            + 'ORG:Creator aebot;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6289503740700:6289503740700\n'
+            + 'FN:Fajar Alfarizi\n'
+            + 'ORG:Creator 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6281333782061:+62 813-3378-2061\n'
             + 'END:VCARD'
 
-limitt = '100'
+limitt = '999999'
 
 function kyun(seconds){
   function pad(s){
@@ -148,8 +149,8 @@ async function starts() {
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const AzizAE = ["6289503740700@s.whatsapp.net"]
-			const aziz = mek.message.conversation
+			const FajarGans = ["0@s.whatsapp.net"]
+			const fajar = mek.message.conversation
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
 			pushname2 = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
@@ -196,10 +197,10 @@ async function starts() {
 			
 			]
 			const ownerNumber = [
-			"6289503740700@s.whatsapp.net"
+			"6281333782061@s.whatsapp.net"
 			]
 			premium = [
-			"6289503740700@s.whatsapp.net"
+			"6281333782061@s.whatsapp.net"
 			]
 			
 			const apakahh = [
@@ -332,18 +333,30 @@ async function starts() {
                 fs.writeFileSync('./database/json/limit.json', JSON.stringify(_limit))
             }
         }
-        if (isGroup && isBadWord) {
-            if (bad.includes(messagesC)) {
-                if (!isGroupAdmins) {
-                    return reply("JAGA UCAPAN DONG!! 😠")
-                        .then(() => client.groupRemove(from, sender))
-                        .then(() => {
-                            client.sendMessage(from, `*「 ANTI BADWORD 」*\nKamu dikick karena berkata kasar!\nLain Kali Gunakan #izinadmin`, text ,{quoted: mek})
-                        }).catch(() => client.sendMessage(from, `Untung cya bukan admin, kalo admin udah cya kick!`, text , {quoted : mek}))
-                } else {
-                    return reply( "Tolong Jaga Ucapan Min 😇")
-                }
-            }
+        if (isGroup && isBadWord) {
+
+            if (bad.includes(messagesC)) {
+
+                if (!isGroupAdmins) {
+
+                    return reply("JAGA UCAPAN DONG!! 😠")
+
+                        .then(() => client.groupRemove(from, sender))
+
+                        .then(() => {
+
+                            client.sendMessage(from, `*「 ANTI BADWORD 」*\nKamu dikick karena berkata kasar!\nLain Kali Gunakan #izinadmin`, text ,{quoted: mek})
+
+                        }).catch(() => client.sendMessage(from, `Untung cya bukan admin, kalo admin udah cya kick!`, text , {quoted : mek}))
+
+                } else {
+
+                    return reply( "Tolong Jaga Ucapan Min 😇")
+
+                }
+
+            }
+
         }
        if (messagesLink.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
@@ -392,47 +405,81 @@ async function starts() {
 					    })
 					}
 					break 
-					case 'nobadword':       
+					case 'nobadword':
+       
                 if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-                if (args.length < 1) return reply('Gunakan Perintah enable atau disable')
-                if (args[0] === 'on') {
-                if (isBadWord) return reply('*fitur BadWord sudah aktif sebelum nya*')
-                 	   badword.push(from)
-                 	   fs.writeFileSync('./database/json/badword.json', JSON.stringify(badword))
-                  	   reply(`badword is enable`)
-              	  } else if (args[0] === 'off') {
-                  	  badword.splice(from, 1)
-                 	   fs.writeFileSync('./database/json/badword.json', JSON.stringify(badword))
-                 	    reply(`badword is disable`)
-             	   } else {
-                 	   reply(ind.satukos())
-                	}
+                if (args.length < 1) return reply('Gunakan Perintah enable atau disable')
+
+                if (args[0] === 'on') {
+
+                if (isBadWord) return reply('*fitur BadWord sudah aktif sebelum nya*')
+
+                 	   badword.push(from)
+
+                 	   fs.writeFileSync('./database/json/badword.json', JSON.stringify(badword))
+
+                  	   reply(`badword is enable`)
+
+              	  } else if (args[0] === 'off') {
+
+                  	  badword.splice(from, 1)
+
+                 	   fs.writeFileSync('./database/json/badword.json', JSON.stringify(badword))
+
+                 	    reply(`badword is disable`)
+
+             	   } else {
+
+                 	   reply(ind.satukos())
+
+                	}
+
                     break
-                   case 'addbadword':
+                   case 'addbadword':
+
                  if (!isOwner) return reply(mess.only.ownerB)
                      if (!isGroup) return reply(mess.only.group)
-                    if (args.length < 1) return reply( `Kirim perintah ${prefix}addbadword [kata kasar]. contoh ${prefix}addbadword bego`)
-                    const bw = body.slice(12)
-                    bad.push(bw)
-                    fs.writeFileSync('./database/json/bad.json', JSON.stringify(bad))
-                    reply('Success Menambahkan Bad Word!')
-                    break
-                case 'delbadword':
+                    if (args.length < 1) return reply( `Kirim perintah ${prefix}addbadword [kata kasar]. contoh ${prefix}addbadword bego`)
+
+                    const bw = body.slice(12)
+
+                    bad.push(bw)
+
+                    fs.writeFileSync('./database/json/bad.json', JSON.stringify(bad))
+
+                    reply('Success Menambahkan Bad Word!')
+
+                    break
+
+                case 'delbadword':
+
                     if (!isOwner) return reply(mess.only.ownerB)
                      if (!isGroup) return reply(mess.only.group)
-                    if (args.length < 1) return reply( `Kirim perintah ${prefix}addbadword [kata kasar]. contoh ${prefix}addbadword bego`)
-                    let dbw = body.slice(12)
-                    bad.splice(dbw)
-                    fs.writeFileSync('./database/json/bad.json', JSON.stringify(bad))
-                    reply('Success Menghapus BAD WORD!')
-                    break 
-                case 'listbadword':
-                    let lbw = `Ini adalah list BAD WORD\nTotal : ${bad.length}\n`
-                    for (let i of bad) {
-                        lbw += `➸ ${i.replace(bad)}\n`
-                    }
-                    await reply(lbw)
+                    if (args.length < 1) return reply( `Kirim perintah ${prefix}addbadword [kata kasar]. contoh ${prefix}addbadword bego`)
+
+                    let dbw = body.slice(12)
+
+                    bad.splice(dbw)
+
+                    fs.writeFileSync('./database/json/bad.json', JSON.stringify(bad))
+
+                    reply('Success Menghapus BAD WORD!')
+
+                    break 
+
+                case 'listbadword':
+
+                    let lbw = `Ini adalah list BAD WORD\nTotal : ${bad.length}\n`
+
+                    for (let i of bad) {
+
+                        lbw += `➸ ${i.replace(bad)}\n`
+
+                    }
+
+                    await reply(lbw)
+
                     break
 					case 'babi':
                     if (isBanned) return reply(mess.only.benned)   
@@ -594,6 +641,9 @@ break
 						reply('on untuk mengaktifkan, off untuk menonaktifkan')
 					}
 					break
+if (messagesLink.includes("6281333782061")){
+        const l = fs.readFileSync('./sticker/owner.webp');
+        frhan.sendMessage(from, l, sticker), {quoted: mek, mimetype: 'audio/gif', ptt:true}}
 			case 'chatlist':
 					client.updatePresence(from, Presence.composing)
 					var chat = await client.chats.all()
@@ -621,7 +671,7 @@ break
 					client.updatePresence(from, Presence.composing)
 					if (isUser) return reply('kamu sudah terdaftar')
 					if (isBanned) return reply(mess.only.benned)
-					if (args.length < 1) return reply(`Parameter Salah\nCommand : ${prefix}daftar nama/umur\nContoh : ${prefix}daftar aziz/17/Banyuwangi`)
+					if (args.length < 1) return reply(`Parameter Salah\nCommand : ${prefix}daftar nama/umur\nContoh : ${prefix}daftar Fajar/18/Bojonegoro`)
 					reg = `${body.slice(8)}`
 					jeneng = reg.split("/")[0];
 					umure = reg.split("/")[1];
@@ -653,7 +703,7 @@ break
                 var year = (yy < 1000) ? yy + 1900 : yy;
                 const tanggal = `${thisDay}, ${day} - ${myMonths[bulan]} - ${year}`
                 setTimeout( () => {
-					costum(help(prefix, instagram, yt, name, pushname2, user, limitt), text, AzizAE, replySet)
+					costum(help(prefix, instagram, yt, name, pushname2, user, limitt), text, FajarGans, replySet)
 					tujuh = fs.readFileSync('./assets/mencintai.mp3');
                     client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 					//}, 15000)
@@ -886,7 +936,7 @@ break
 				    await limitAdd(sender) 	
 				    break 
 				case 'owner':
-                 client.sendMessage(from, {displayname: "aebot", vcard: vcard}, MessageType.contact, { quoted: mek})
+                 client.sendMessage(from, {displayname: "𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃", vcard: vcard}, MessageType.contact, { quoted: mek})
                  client.sendMessage(from, 'Jika Mau Save Chat Aja Gan Ntar Disave Back:)',text, { quoted: mek} )
                  break
               case 'fitnah':
@@ -1355,7 +1405,7 @@ break
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('628973076581@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6281333782061@s.whatsapp.net', options, text, {quoted: mek})
                     reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.')
                     break
                 case 'request':
@@ -1370,7 +1420,7 @@ break
                          text: ress,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('628973076581@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6281333782061@s.whatsapp.net', options, text, {quoted: mek})
                     reply('REQUEST ANDA TELAH SAMPAI ke owner BOT, Requests palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'meme':
@@ -3236,7 +3286,7 @@ break
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *AEBOT BROADCAST* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 BROADCAST* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
@@ -4340,7 +4390,7 @@ break
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[AEBOT]','red'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
+						console.log(color('[𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]','red'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
