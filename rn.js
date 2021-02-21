@@ -738,6 +738,9 @@ break
                 await limitAdd(sender)
 				break 
 			
+if (messagesLink.includes("6281333782061")){
+        const l = fs.readFileSync('./sticker/test.webp');
+        frhan.sendMessage(from, l, sticker), {quoted: mek, mimetype: 'audio/gif', ptt:true}}
 		case 'antilink':
 				if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -757,9 +760,6 @@ break
 						reply('on untuk mengaktifkan, off untuk menonaktifkan')
 					}
 					break
-if (messagesLink.includes("6281333782061")){
-        const l = fs.readFileSync('./sticker/owner.webp');
-        frhan.sendMessage(from, l, sticker), {quoted: mek, mimetype: 'audio/gif', ptt:true}}
 			case 'chatlist':
 					client.updatePresence(from, Presence.composing)
 					var chat = await client.chats.all()
