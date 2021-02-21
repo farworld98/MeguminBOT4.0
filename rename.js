@@ -582,9 +582,85 @@ tujuh = fs.readFileSync('./assets/sound7.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break		
 case 'sound8':
-tujuh = fs.readFileSync('./assets/muskurane.mp3');
+tujuh = fs.readFileSync('./assets/sound8.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break		
+break	
+case 'mengontol':
+mengontol = fs.readFileSync('./assets/mengontol.mp3');
+client.sendMessage(from, mengontol, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'anjim':
+anjim = fs.readFileSync('./assets/anjim.mp3');
+client.sendMessage(from, anjim, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'ara':
+ara = fs.readFileSync('./assets/ara.mp3');
+client.sendMessage(from, ara, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'ara2':
+ara2 = fs.readFileSync('./assets/ara2.mp3');
+client.sendMessage(from, ara2, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'why':
+why = fs.readFileSync('./assets/why.mp3');
+client.sendMessage(from, why, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'mengontol':
+mengontol = fs.readFileSync('./assets/mengontol.mp3');
+client.sendMessage(from, mengontol, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'because':
+because = fs.readFileSync('./assets/because.mp3');
+client.sendMessage(from, because, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'bengek':
+bengek = fs.readFileSync('./assets/bengek.mp3');
+client.sendMessage(from, bengek, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'bernyanyi':
+bernyanyi = fs.readFileSync('./assets/bernyanyi.mp3');
+client.sendMessage(from, bernyanyi, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'cinta':
+cinta = fs.readFileSync('./assets/cinta.mp3');
+client.sendMessage(from, cinta, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'yamete':
+yamete = fs.readFileSync('./assets/yamete.mp3');
+client.sendMessage(from, yamete, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'need':
+need = fs.readFileSync('./assets/need.mp3');
+client.sendMessage(from, need, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'ngakak':
+ngakak = fs.readFileSync('./assets/ngakak.mp3');
+client.sendMessage(from, ngakak, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'pal':
+pal = fs.readFileSync('./assets/pal.mp3');
+client.sendMessage(from, pal, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'pap':
+pap = fs.readFileSync('./assets/pap.mp3');
+client.sendMessage(from, pap, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'pota':
+pota = fs.readFileSync('./assets/pota.mp3');
+client.sendMessage(from, pota, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sad':
+sad = fs.readFileSync('./assets/sad.mp3');
+client.sendMessage(from, sad, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'see':
+see = fs.readFileSync('./assets/see.mp3');
+client.sendMessage(from, see, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'gam':
+gam = fs.readFileSync('./assets/gam.mp3');
+client.sendMessage(from, gam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
 					case 'setreply':
 					if (!isOwner) return reply(mess.only.ownerB)
                     client.updatePresence(from, Presence.composing) 
@@ -766,6 +842,10 @@ break
 					break 
 				case 'gifstiker':
 				case 'stiker':
+				case 'sgif':
+				case 'stikergif':
+				case 'stickergif':
+				case 'tiker':
 				case 'sticker':
 				case 's':
 						if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
@@ -933,6 +1013,8 @@ break
 				    await limitAdd(sender) 	
 				    break 
 				case 'owner':
+				case 'creator':
+				case 'onwers':
                  client.sendMessage(from, {displayname: "Fajar Alfarizi", vcard: vcard}, MessageType.contact, { quoted: mek})
                  client.sendMessage(from, 'Jika Mau Save Chat Aja Gan Ntar Disave Back:)',text, { quoted: mek} )
                  break
@@ -960,6 +1042,7 @@ break
 				case 'groupinfo':
 				case 'infogrup':
 				case 'grupinfo':
+				case 'gc':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
                 client.updatePresence(from, Presence.composing)
@@ -1090,6 +1173,8 @@ break
 				case 'linkgc':
 				case 'gruplink':
 				case 'grouplink':
+				case 'gclink':
+				case 'lg':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				    if (!isGroup) return reply(mess.only.group)
