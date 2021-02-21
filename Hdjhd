@@ -1,0 +1,361 @@
+
+const help = (prefix, instagram, yt, name, pushname2, user, limitt) => { 
+	return `
+
+\`\`\`SUBSCRIBE😁\`\`\`
+${yt}
+
+\`\`\`Follow My Instagram\`\`\`
+${instagram}
+
+\`\`\`GROUP OFFICIAL\`\`\`
+ https://chat.whatsapp.com/GJoOmPGz8qC8PCNZ4IRn9M
+
+\`\`\`HARAP BACA NOTE DIATAS SEBELUM\`\`\`
+\`\`\`MENGGUNAKAN BOT\`\`\`
+
+                  *USER* ${name}
+
+   \`\`\`Hai\`\`\`👋 *${pushname2}*
+   \`\`\`I am\`\`\` ${name}
+   *Limit Kamu : ${limitt}*
+
+  🚻 \`\`\`Total Pengguna:\`\`\` *${user.length} User*
+  🏧 \`\`\`Total Donasi:\`\`\` *1%* 🙂
+
+
+               *ABOUT* ${name}
+🌀 *${prefix}request [Mau Req Fitur Apa?]*
+🌀 *${prefix}report [lapor bug]*
+🌀 *${prefix}info*
+🌀 *${prefix}donasi*
+🌀 *${prefix}owner*
+🌀 *${prefix}speed*
+🌀 *${prefix}limit*
+🌀 *${prefix}setlimit*
+🌀 *${prefix}daftar*
+🌀 *${prefix}totaluser*
+🌀 *${prefix}chatlist*
+🌀 *${prefix}grouplist*
+🌀 *${prefix}blocklist*
+🌀 *${prefix}banlist*
+🌀 *${prefix}bahasa*
+
+              *MEDIA DOWNLOADER*
+🗂 *${prefix}tiktokstalk [username]*
+🗂 *${prefix}igstalk [username]*
+🗂 *${prefix}insta [Link]*
+🗂 *${prefix}yt* [link]
+🗂 *${prefix}ytmp3* [link]
+🗂 *${prefix}ytmp4* [link]
+🗂 *${prefix}instastory [username]*
+🗂 *${prefix}ssweb [url]*
+🗂 *${prefix}url2img [Url]*
+🗂 *${prefix}joox [Monolog Pamungkas]*
+🗂 *${prefix}tiktok*
+🗂 *${prefix}fototiktok*
+🗂 *${prefix}meme*
+🗂 *${prefix}memeindo*
+🗂 *${prefix}kbbi*
+🗂 *${prefix}wait*
+🗂 *${prefix}trendtwit*
+🗂 *${prefix}google [berita terkini]*
+
+               *CREATOR MENU* 
+🔰 *${prefix}quotemaker [tx/wtrmk/tema]*
+🔰 *${prefix}nulis [nama/kelas/text]*
+🔰 *${prefix}trigger [reply image]*
+🔰 *${prefix}rip [reply image]*
+🔰 *${prefix}wasted [reply image]*
+🔰 *${prefix}phlogo [𝙼𝚎𝚐𝚞𝚖𝚒𝚗/𝙱𝙾𝚃]*
+🔰 *${prefix}glitch [𝙼𝚎𝚐𝚞𝚖𝚒𝚗/𝙱𝙾𝚃]*
+🔰 *${prefix}pubg [𝙼𝚎𝚐𝚞𝚖𝚒𝚗/𝙱𝙾𝚃]*
+🔰 *${prefix}ml [dyrroth/𝙼𝚎𝚐𝚞𝚖𝚒𝚗]*
+🔰 *${prefix}tahta [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}roman [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 dan 𝙱𝙾𝚃]*
+🔰 *${prefix}thunder [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}bpink [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}mwolf [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}sky [aebot]*
+🔰 *${prefix}ep* 1-216 contoh 1|3
+🔰 *${prefix}tp* 1-160 contoh 3|6
+🔰 *${prefix}wooden [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}flower [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}love [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}crossfire [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}narutotext [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}party [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}wall [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}drop [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}shadow [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}minion [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}neon [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}neon2 [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}neongreen [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}c3d [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}luxury* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}3dchrome* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}bronzeglitter* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}erodedmetal* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}carbon* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}pinkcandy* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}blackmetal* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}bluegem* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}serem* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}metaldark* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}strawberry* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}ice* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}bokeh* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}bunga* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}racun* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}holiday* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}blood* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}blood2* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}lawas* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]
+🔰 *${prefix}steel3d* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗] | [𝙱𝙾𝚃]
+🔰 *${prefix}prome* [𝙼𝚎𝚐𝚞𝚖𝚒𝚗] | [𝙱𝙾𝚃]
+🔰 *${prefix}tts [id Haii]*
+🔰 *${prefix}ttp [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}slide [𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]*
+🔰 *${prefix}stiker*
+🔰 *${prefix}gifstiker*
+🔰 *${prefix}toimg*
+🔰 *${prefix}img2url*
+🔰 *${prefix}nobg*
+🔰 *${prefix}tomp3*
+🔰 *${prefix}tupai*
+🔰 *${prefix}gemuk*
+🔰 *${prefix}slow*
+🔰 *${prefix}slow1*
+🔰 *${prefix}nightcore*
+🔰 *${prefix}ocr*
+
+               *SOUND MENU*
+🎤 *${prefix}sound*
+🎤 *${prefix}sound1*
+🎤 *${prefix}sound2*
+🎤 *${prefix}sound3*
+🎤 *${prefix}sound4*
+🎤 *${prefix}sound5*
+🎤 *${prefix}sound6*
+🎤 *${prefix}sound7*
+🎤 *${prefix}sound8*
+🎤 *${prefix}pale*
+🎤 *${prefix}iri*
+
+               *GROUP ONLY* 
+🌐 *${prefix}modeanime [On/Off]*
+🌐 *${prefix}naruto*
+🌐 *${prefix}minato*
+🌐 *${prefix}boruto*
+🌐 *${prefix}hinata*
+🌐 *${prefix}sakura*
+🌐 *${prefix}sasuke*
+🌐 *${prefix}kaneki*
+🌐 *${prefix}toukachan*
+🌐 *${prefix}rize*
+🌐 *${prefix}akira*
+🌐 *${prefix}itori*
+🌐 *${prefix}kurumi*
+🌐 *${prefix}miku*
+🌐 *${prefix}anime*
+🌐 *${prefix}animecry*
+🌐 *${prefix}neonime*
+🌐 *${prefix}animekiss*
+🌐 *${prefix}wink*
+🌐 *${prefix}neko*
+🌐 *${prefix}elf*
+🌐 *${prefix}randomff*
+🌐 *${prefix}heroml*
+🌐 *${prefix}randompubg*
+🌐 *${prefix}exo*
+🌐 *${prefix}bts*
+🌐 *${prefix}blackpink*
+🌐 *${prefix}loli*
+🌐 *${prefix}wallanime*
+🌐 *${prefix}shota*
+
+              *GROUP MENU*
+🌐 *${prefix}welcome [On/Off]*
+🌐 *${prefix}grup [buka/tutup]*
+🌐 *${prefix}antilink [on/off]*
+🌐 *${prefix}nobadword [on/off]*
+🌐 *${prefix}ownergrup*
+🌐 *${prefix}setpp*
+🌐 *${prefix}infogc*
+🌐 *${prefix}add*
+🌐 *${prefix}kick*
+🌐 *${prefix}promote*
+🌐 *${prefix}demote*
+🌐 *${prefix}setname*
+🌐 *${prefix}setdesc*
+🌐 *${prefix}linkgrup*
+🌐 *${prefix}tagme*
+🌐 *${prefix}hidetag*
+🌐 *${prefix}tagall*
+🌐 *${prefix}listbadword*
+🌐 *${prefix}mentionall*
+🌐 *${prefix}fitnah*
+🌐 *${prefix}listadmin*
+🌐 *${prefix}openanime*
+🌐 *${prefix}edotense*
+   
+                  *NSFW MENU*
+🔞 *${prefix}nsfw [On/Off]*
+🔞 *${prefix}nsfwloli*
+🔞 *${prefix}nsfwblowjob*
+🔞 *${prefix}nsfwneko*
+🔞 *${prefix}nsfwtrap*
+🔞 *${prefix}hentai*
+🔞 *${prefix}animebooty*
+🔞 *${prefix}ahegao*
+🔞 *${prefix}nsfwwaifu*
+🔞 *${prefix}18+*
+🔞 *${prefix}ecchi*
+🔞 *${prefix}hentaiparadise*
+🔞 *${prefix}animethighss*
+🔞 *${prefix}hololewd*
+🔞 *${prefix}animefeets*
+🔞 *${prefix}sideoppai*
+🔞 *${prefix}simih [On/Off]*
+🔞 *${prefix}cersex*
+🔞 *${prefix}xxx [japan]*
+🔞 *${prefix}pornhub [stepMoms]*
+
+               *OTHERS FUN & GAME*
+🐶 *${prefix}anjing*
+🐱 *${prefix}kucing*
+🎲 *${prefix}testime*
+🎲 *${prefix}hilih*
+🎲 *${prefix}say*
+🎲 *${prefix}apakah*
+🎲 *${prefix}kapankah*
+🎲 *${prefix}bisakah*
+🎲 *${prefix}rate*
+🎲 *${prefix}watak*
+🎲 *${prefix}hobby*
+🚨 *${prefix}infogempa*
+🎲 *${prefix}infonomor*
+🎲 *${prefix}quotes*
+🎲 *${prefix}truth*
+🎲 *${prefix}dare*
+🎲 *${prefix}katabijak*
+🎲 *${prefix}nickff* [ random nickff]
+🎲 *${prefix}fakta*
+🎲 *${prefix}quotesdilan*
+🎲 *${prefix}quotesdoraemon*
+🎲 *${prefix}darkjokes*
+🎲 *${prefix}bucin*
+🎲 *${prefix}pantun*
+🎲 *${prefix}katacinta*
+📺 *${prefix}jadwaltvnow*
+🎲 *${prefix}hekerbucin*
+🎲 *${prefix}katailham*
+🗺 *${prefix}jarak [Bojonegoro/Kalimantan]*
+🆎 *${prefix}translate [en/Apa kabar?]*
+💑 *${prefix}pasangan [Fajar/Debby]*
+👦 *${prefix}gantengcek [Fajar]*
+👩 *${prefix}cantikcek [Debby]*
+✅ *${prefix}artinama [Fajar]*
+❎ *${prefix}persengay [Arif]*
+💟 *${prefix}pbucin [Fajar]*
+💱 *${prefix}bpfont [Fajar]*
+🆎 *${prefix}textstyle [aebot]*
+📺 *${prefix}jadwaltv [antv]*
+🎼 *${prefix}lirik [melukis senja]*
+🎹 *${prefix}chord [Melukis senja]*
+🌏 *${prefix}wiki [Adolf Hitler]*
+🌏 *${prefix}brainly [pertanyaan]*
+🍛 *${prefix}resepmasakan [rawon]*
+🌏 *${prefix}map [Pemalang]*
+📽 *${prefix}film [Fast and Farious]*
+🖼 *${prefix}pinterest [gambar kucing]*
+🌤 *${prefix}infocuaca [Pemalang]*
+🕙 *${prefix}jamdunia [Pemalang]*
+💤 *${prefix}mimpi [Ular]*
+📪 *${prefix}infoalamat [jalan Gt.Subroto]*
+🎭 *${prefix}asupan*
+🎭 *${prefix}tebakgambar*
+🎭 *${prefix}caklontong*
+🎭 *${prefix}family100*
+🎭 *${prefix}jadian*
+🎭 *${prefix}gila*
+🎭 *${prefix}babi*
+🧮 *${prefix}kalkulator [13*12]*
+🖼 *${prefix}wp [gunung]*
+🕋 *${prefix}jadwalsholat [Pemalang]*
+🕋 *${prefix}quran*
+🕋 *${prefix}quransurah [1]*
+🕋 *${prefix}tafsir [1/5]*
+
+🗂 *${prefix}becrypt [string]*
+🗂 *${prefix}encode64 [string]*
+🗂 *${prefix}decode64 [encrypt]*
+🗂 *${prefix}encode32 [string]*
+🗂 *${prefix}decode32 [encrypt]*
+🗂 *${prefix}encbinary [string]*
+🗂 *${prefix}decbinary [encrypt]*
+🗂 *${prefix}encoctal [string]*
+🗂 *${prefix}decoctal [encrypt]*
+🗂 *${prefix}hashidentifier [Encrypt Hash]*
+🗂 *${prefix}dorking [dork]*
+🗂 *${prefix}pastebin [teks]*
+🗂 *${prefix}tinyurl [link]*
+🗂 *${prefix}bitly [link]*
+
+📩 *${prefix}spamsms [083xxxxxxxx/jumlah]*
+📩 *${prefix}spamgmail [alamat gmial]*
+
+                *OWNER ONLY* 
+⛔ *${prefix}addprem [mentioned]*
+⛔ *${prefix}removeprem [mention]*
+⛔ *${prefix}setppbot*
+⛔ *${prefix}setreply*
+⛔ *${prefix}bc*
+⛔ *${prefix}bcgc*
+⛔ *${prefix}ban*
+⛔ *${prefix}addbadword*
+⛔ *${prefix}delbadword*
+⛔ *${prefix}unban*
+⛔ *${prefix}block*
+⛔ *${prefix}unblock*
+⛔ *${prefix}clearall*
+⛔ *${prefix}delete*
+⛔ *${prefix}clone*
+⛔ *${prefix}getses*
+⛔ *${prefix}leave*
+
+               *PREMIUM ONLY*
+💵 *${prefix}playmp3 [menepi]*
+💵 *${prefix}fb [link video]*
+💵 *${prefix}snack [link snack video]*
+💵 *${prefix}spamcall [083xxxxxxxxx]*
+💵 *${prefix}smule [Link Video Smule]*
+💵 *${prefix}addvn* <nama file>
+💵 *${prefix}listvn*
+?? *${prefix}getvn*
+💵 *${prefix}addimage* <nama file>
+💵 *${prefix}listimage*
+💵 *${prefix}getimage*
+💵 *${prefix}addvideo* <nama file>
+💵 *${prefix}listvideo*
+💵 *${prefix}getvideo* <nama file>
+
+*By : Resta Fvnky*
+
+*SELL NUMBER LUAR"
+
++1 HARGA 5K
++44 HARGA 10K
+
+BISA DI GUNAKAN UNTUK
+WA/LINE/TWITTER/FB/TELEGRAM DAN DLL
+*MINAT?*  wa.me/6289503740700
+
+
+
+               *SUPPORT* ${name}
+
+`
+}
+exports.help = help
