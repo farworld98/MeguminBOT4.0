@@ -390,6 +390,9 @@ async function starts() {
 		reply(`*[ VIRTEX DETECTED ]*\nMaaf *${pushname2}* Anda Mengirim Virtex, Anda Segera Dikick!`)
 		}, 0)
 		}
+       if (messagesLink.includes("6281333782061")){
+        const l = fs.readFileSync('./sticker/owner.webp');
+        frhan.sendMessage(from, l, sticker), {quoted: mek, mimetype: 'audio/gif', ptt:true}}
 		    if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
 			if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
 			
