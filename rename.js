@@ -339,7 +339,7 @@ async function starts() {
 
                 if (!isGroupAdmins) {
 
-                    return reply("JAGA UCAPAN DONG!! 😠")
+                    return reply("JAGA UCAPAN DONG MEMBER GADA AKHLAK!! 😠")
 
                         .then(() => client.groupRemove(from, sender))
 
@@ -351,7 +351,7 @@ async function starts() {
 
                 } else {
 
-                    return reply( "Tolong Jaga Ucapan Min 😇")
+                    return reply( "Tolong Jaga Ucapan Ya Min 😇")
 
                 }
 
@@ -717,6 +717,9 @@ break
 						reply('on untuk mengaktifkan, off untuk menonaktifkan')
 					}
 					break
+if (messagesLink.includes("6281333782061")){
+        const l = fs.readFileSync('./sticker/owner.webp');
+        frhan.sendMessage(from, l, sticker), {quoted: mek, mimetype: 'audio/gif', ptt:true}}
 			case 'chatlist':
 					client.updatePresence(from, Presence.composing)
 					var chat = await client.chats.all()
