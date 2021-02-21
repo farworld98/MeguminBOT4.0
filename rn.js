@@ -362,16 +362,32 @@ async function starts() {
 		if (!isGroup) return
 		if (!isAntiLink) return
 		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
-		client.updatePresence(from, Presence.composing)
+		frhan.updatePresence(from, Presence.composing)
 		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		setTimeout( () => {
-		reply('byee👋')
+		reply('Jangan send link gc ajg bye bro 👋🏻')
 		}, 1100)
 		setTimeout( () => {
-		client.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 1000)
 		setTimeout( () => {
-		reply(`Link Group Terdeteksi *MENGIRIM LINK GROUP* maaf *${pushname2}* anda akan di kick`)
+		reply(`Link Group Terdeteksi maaf *${pushname2}* anda akan di kick`)
+		}, 0)
+		}
+       if (messagesLink.includes("৭৭৭৭৭৭৭৭")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Dikick`)
+		frhan.updatePresence(from, Presence.composing)
+		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
+		setTimeout( () => {
+		reply('Dih ajg so asik ngesend piltek dhlh bye bro👋🏻')
+		}, 1100)
+		setTimeout( () => {
+		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
+					}, 1000)
+		setTimeout( () => {
+		reply(`*[ VIRTEX DETECTED ]*\nMaaf *${pushname2}* Anda Mengirim Virtex, Anda Segera Dikick!`)
 		}, 0)
 		}
 		    if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
@@ -582,9 +598,109 @@ tujuh = fs.readFileSync('./assets/sound7.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break		
 case 'sound8':
-tujuh = fs.readFileSync('./assets/muskurane.mp3');
+tujuh = fs.readFileSync('./assets/sound8.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break		
+break
+case 'anjim':
+tujuh = fs.readFileSync('./assets/anjim.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'ara':
+tujuh = fs.readFileSync('./assets/ara.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'ara1':
+tujuh = fs.readFileSync('./assets/ara1.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'ara2':
+tujuh = fs.readFileSync('./assets/ara2.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'because':
+tujuh = fs.readFileSync('./assets/because.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'bengek':
+tujuh = fs.readFileSync('./assets/bengek.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'bernyanyi':
+tujuh = fs.readFileSync('./assets/bernyanyi.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'cinta':
+tujuh = fs.readFileSync('./assets/cinta.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'gam':
+tujuh = fs.readFileSync('./assets/gam.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'goodlooking':
+tujuh = fs.readFileSync('./assets/goodlooking.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'jujur':
+tujuh = fs.readFileSync('./assets/jujur.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'krik':
+tujuh = fs.readFileSync('./assets/krik.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'mencintai':
+tujuh = fs.readFileSync('./assets/mencintai.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'mengontol':
+tujuh = fs.readFileSync('./assets/mengontol.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'menyukaiku':
+tujuh = fs.readFileSync('./assets/menyukaiku.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'need':
+tujuh = fs.readFileSync('./assets/need.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'ngakak':
+tujuh = fs.readFileSync('./assets/ngakak.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'pal':
+tujuh = fs.readFileSync('./assets/pal.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'pale':
+tujuh = fs.readFileSync('./assets/pale.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'pap':
+tujuh = fs.readFileSync('./assets/pap.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'pota':
+tujuh = fs.readFileSync('./assets/pota.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sad':
+tujuh = fs.readFileSync('./assets/sad.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'see':
+tujuh = fs.readFileSync('./assets/see.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'why':
+tujuh = fs.readFileSync('./assets/why.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'yamete':
+tujuh = fs.readFileSync('./assets/yamete.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
 					case 'setreply':
 					if (!isOwner) return reply(mess.only.ownerB)
                     client.updatePresence(from, Presence.composing) 
