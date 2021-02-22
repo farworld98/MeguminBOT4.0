@@ -670,6 +670,10 @@ case 'mengontol':
 tujuh = fs.readFileSync('./assets/mengontol.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
+case 'bapaklo':
+tujuh = fs.readFileSync('./assets/bapaklo.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
 case 'menyukaiku':
 tujuh = fs.readFileSync('./assets/menyukaiku.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
