@@ -570,222 +570,149 @@ async function starts() {
 					jds.push(diaa.jid)
 					mentions(teks, jds, true)
 					break
-					
-if (budy.includes(`iri`)){
-if (budy.includes(`Iri`)){
-}
-const iri = fs.readFileSync('./assets/iri.mp3');
-client.sendMessage(from, iri, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+					case 'iri':
+const irimp3 = fs.readFileSync('./assets/iri.mp3');
+client.sendMessage(from, irimp3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'pale':
+const pa = fs.readFileSync('assets/pale.mp3')
+client.sendMessage(from, pa, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`pale`)){
-if (budy.includes(`pale`)){
-}
-const pale = fs.readFileSync('./assets/pale.mp3');
-client.sendMessage(from, pale, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'sound':
+const soun = fs.readFileSync('assets/sound.mp3')
+client.sendMessage(from, soun, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'sound1':
+satu = fs.readFileSync('./assets/sound1.mp3');
+client.sendMessage(from, satu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`sound`)){
-if (budy.includes(`sound`)){
-}
-const sound = fs.readFileSync('./assets/sound.mp3');
-client.sendMessage(from, sound, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'sound2':
+dua = fs.readFileSync('./assets/sound2.mp3');
+client.sendMessage(from, dua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`sound1`)){
-if (budy.includes(`sound1`)){
-}
-const sound1 = fs.readFileSync('./assets/sound1.mp3');
-client.sendMessage(from, sound1, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'sound3':
+tiga = fs.readFileSync('./assets/sound3.mp3');
+client.sendMessage(from, tiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`sound2`)){
-if (budy.includes(`sound2`)){
-}
-const sound2 = fs.readFileSync('./assets/sound2.mp3');
-client.sendMessage(from, sound2, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'sound4':
+empat = fs.readFileSync('./assets/sound4.mp3');
+client.sendMessage(from, empat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`sound3`)){
-if (budy.includes(`sound3`)){
-}
-const sound3 = fs.readFileSync('./assets/sound3.mp3');
-client.sendMessage(from, sound3, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'sound5':
+lima = fs.readFileSync('./assets/sound5.mp3');
+client.sendMessage(from, lima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`sound4`)){
-if (budy.includes(`sound4`)){
-}
-const sound4 = fs.readFileSync('./assets/sound4.mp3');
-client.sendMessage(from, sound4, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'sound6':
+enam = fs.readFileSync('./assets/sound6.mp3');
+client.sendMessage(from, enam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`sound5`)){
-if (budy.includes(`sound5`)){
-}
-const sound5 = fs.readFileSync('./assets/sound5.mp3');
-client.sendMessage(from, sound5, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'sound7':
+tujuh = fs.readFileSync('./assets/sound7.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break		
+case 'sound8':
+tujuh = fs.readFileSync('./assets/sound8.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`sound6`)){
-if (budy.includes(`sound6`)){
-}
-const sound6 = fs.readFileSync('./assets/sound6.mp3');
-client.sendMessage(from, sound6, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'anjim':
+tujuh = fs.readFileSync('./assets/anjim.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`sound7`)){
-if (budy.includes(`sound7`)){
-}
-const sound7 = fs.readFileSync('./assets/sound7.mp3');
-client.sendMessage(from, sound7, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
-break	
-if (budy.includes(`sound8`)){
-if (budy.includes(`sound8`)){
-}
-const sound8 = fs.readFileSync('./assets/sound8.mp3');
-client.sendMessage(from, sound8, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'ara':
+tujuh = fs.readFileSync('./assets/ara.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`anjim`)){
-if (budy.includes(`anjim`)){
-}
-const anjim = fs.readFileSync('./assets/anjim.mp3');
-client.sendMessage(from, anjim, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'ara1':
+tujuh = fs.readFileSync('./assets/ara1.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`ara`)){
-if (budy.includes(`ara`)){
-}
-const ara = fs.readFileSync('./assets/ara.mp3');
-client.sendMessage(from, ara, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'ara2':
+tujuh = fs.readFileSync('./assets/ara2.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`sound1`)){
-if (budy.includes(`sound1`)){
-}
-const ara1 = fs.readFileSync('./assets/ara1.mp3');
-client.sendMessage(from, ara1, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'because':
+tujuh = fs.readFileSync('./assets/because.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`ara2`)){
-if (budy.includes(`ara2`)){
-}
-const ara2 = fs.readFileSync('./assets/ara2.mp3');
-client.sendMessage(from, ara2, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'bengek':
+tujuh = fs.readFileSync('./assets/bengek.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`because`)){
-if (budy.includes(`because`)){
-}
-const because = fs.readFileSync('./assets/because.mp3');
-client.sendMessage(from, because, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'bernyanyi':
+tujuh = fs.readFileSync('./assets/bernyanyi.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`bengek`)){
-if (budy.includes(`bengek`)){
-}
-const bengek = fs.readFileSync('./assets/bengek.mp3');
-client.sendMessage(from, bengek, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'cinta':
+tujuh = fs.readFileSync('./assets/cinta.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`bernyanyi`)){
-if (budy.includes(`bernyanyi`)){
-}
-const bernyanyi = fs.readFileSync('./assets/bernyanyi.mp3');
-client.sendMessage(from, bernyanyi, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'gam':
+tujuh = fs.readFileSync('./assets/gam.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`cinta`)){
-if (budy.includes(`cinta`)){
-}
-const cinta = fs.readFileSync('./assets/cinta.mp3');
-client.sendMessage(from, cinta, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'goodlooking':
+tujuh = fs.readFileSync('./assets/goodlooking.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`gam`)){
-if (budy.includes(`gam`)){
-}
-const gam = fs.readFileSync('./assets/gam.mp3');
-client.sendMessage(from, gam, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'jujur':
+tujuh = fs.readFileSync('./assets/jujur.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`goodlooking`)){
-if (budy.includes(`goodlookinh`)){
-}
-const goodlooking = fs.readFileSync('./assets/goodlooking.mp3');
-client.sendMessage(from, goodlooking, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'krik':
+tujuh = fs.readFileSync('./assets/krik.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`jujur`)){
-if (budy.includes(`jujur`)){
-}
-const jujur = fs.readFileSync('./assets/jujur.mp3');
-client.sendMessage(from, jujur, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'mencintai':
+tujuh = fs.readFileSync('./assets/mencintai.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`krik`)){
-if (budy.includes(`krik`)){
-}
-const krik = fs.readFileSync('./assets/krik.mp3');
-client.sendMessage(from, krik, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'mengontol':
+tujuh = fs.readFileSync('./assets/mengontol.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`mencintai`)){
-if (budy.includes(`mencintai`)){
-}
-const mencintai = fs.readFileSync('./assets/mencintai.mp3');
-client.sendMessage(from, mencintai, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'menyukaiku':
+tujuh = fs.readFileSync('./assets/menyukaiku.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`mengontol`)){
-if (budy.includes(`mengontol`)){
-}
-const mengontol = fs.readFileSync('./assets/mengontol.mp3');
-client.sendMessage(from, mengontol, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'need':
+tujuh = fs.readFileSync('./assets/need.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`menyukaiku`)){
-if (budy.includes(`menyukaiku`)){
-}
-const menyukaiku = fs.readFileSync('./assets/menyukaiku.mp3');
-client.sendMessage(from, menyukaiku, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'ngakak':
+tujuh = fs.readFileSync('./assets/ngakak.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`need`)){
-if (budy.includes(`need`)){
-}
-const need = fs.readFileSync('./assets/need.mp3');
-client.sendMessage(from, need, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'pal':
+tujuh = fs.readFileSync('./assets/pal.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`ngakak`)){
-if (budy.includes(`ngakak`)){
-}
-const ngakak = fs.readFileSync('./assets/ngakak.mp3');
-client.sendMessage(from, ngakak, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'pale':
+tujuh = fs.readFileSync('./assets/pale.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`pal`)){
-if (budy.includes(`pal`)){
-}
-const pal = fs.readFileSync('./assets/pal.mp3');
-client.sendMessage(from, pal, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'pap':
+tujuh = fs.readFileSync('./assets/pap.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`pale`)){
-if (budy.includes(`pale`)){
-}
-const pale = fs.readFileSync('./assets/pale.mp3');
-client.sendMessage(from, pale, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'pota':
+tujuh = fs.readFileSync('./assets/pota.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`pap`)){
-if (budy.includes(`pap`)){
-}
-const pap = fs.readFileSync('./assets/pap.mp3');
-client.sendMessage(from, pap, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'sad':
+tujuh = fs.readFileSync('./assets/sad.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`pota`)){
-if (budy.includes(`pota`)){
-}
-const pota = fs.readFileSync('./assets/pota.mp3');
-client.sendMessage(from, pota, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'see':
+tujuh = fs.readFileSync('./assets/see.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`sad`)){
-if (budy.includes(`sad`)){
-}
-const sad = fs.readFileSync('./assets/sad.mp3');
-client.sendMessage(from, sad, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'why':
+tujuh = fs.readFileSync('./assets/why.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-if (budy.includes(`see`)){
-if (budy.includes(`see`)){
-}
-const see = fs.readFileSync('./assets/see.mp3');
-client.sendMessage(from, see, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
-break
-if (budy.includes(`why`)){
-if (budy.includes(`why`)){
-}
-const why = fs.readFileSync('./assets/why.mp3');
-client.sendMessage(from, why, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
-break
-if (budy.includes(`yamete`)){
-if (budy.includes(`yamete`)){
-}
-const yamete = fs.readFileSync('./assets/yamete.mp3');
-client.sendMessage(from, yamete, MessageType.audio, {quoted: mek, mimeype: 'audio/mp4', ptt:true})}
+case 'yamete':
+tujuh = fs.readFileSync('./assets/yamete.mp3');
+client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
 					case 'setreply':
 					if (!isOwner) return reply(mess.only.ownerB)
